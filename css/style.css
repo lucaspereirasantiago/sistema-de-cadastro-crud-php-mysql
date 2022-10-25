@@ -1,0 +1,54 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+body{
+   background-color: #F0EFE7;
+   color: #212121;
+}
+#logo{
+    width: 5%;
+}
+#title{
+    float: right;
+    margin-top: 3px;
+    margin-right: 70%;
+}
+#block-logo{
+    margin-top: 3%;
+    margin-left: 7%;
+    margin-bottom: 0;
+}
+#form{
+    margin-top: 2%;
+    margin-left: 7%;
+}
+#input{
+    margin-top: 5px;  
+}
+#btn-primary{
+    margin-top: 13px;
+}
+label{
+    margin-top: 10px;
+    margin-bottom: 3px;
+}
+#title-terms{
+    margin-top: 25px;
+    margin-left: 200px;
+}
+p{
+    text-align: justify;
+    max-width: 60%;
+}
+li{
+    margin-top: 30px;
+}
+#adm-btn{
+  margin-left: 180px;
+  margin-top: -65px;
+}
+#adm-title{
+    text-decoration: none;
+    color: #ffffff;
+}
