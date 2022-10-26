@@ -54,7 +54,7 @@
                     <label>Concordo com os <b><a href="terms-of-use.php">Termos de Uso</a></b> de Cadastro.com</label>
                 </div>
                 <div class="col-md-6" id=btn-primary>
-                    <button type="submit" class="btn btn-primary">Cadastar</button>
+                    <button type="submit" class="btn btn-primary">Cadastrar</button>
                 </div>
             </form>
         </div>
