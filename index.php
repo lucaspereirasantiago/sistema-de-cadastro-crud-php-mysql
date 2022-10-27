@@ -25,7 +25,8 @@
              <h1 id="title">Cadastro.com</h1>
         </div>
         <div class="col" id=form>
-            <form action="terms-of-use.php" method="post">
+            <form action="users.php" method="post">
+                <input type="hidden" name="acao" value="cadastrar">
                 <div class="col-md-6" id=input>
                     <label>Nome completo</label>
                     <input type="text" name="nome" class="form-control">
