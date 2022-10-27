@@ -45,9 +45,11 @@
                 <div class="col-md-6" id=input>
                     <label for="disabledSelect" class="form-label">Sexo</label>
                     <select id="disabledSelect" class="form-select">
-                    <option>Masculino</option>
-                    <option>Feminino</option>
-                    <option>Prefiro não dizer</option>
+                        <option disabled selected>Selecione</option>
+                        <option value="masculino">Masculino</option>
+                        <option value="feminino">Feminino</option>
+                        <option value="indefinido">Prefiro não dizer</option>
+                    </select>
                 </div>
                 <div class="col-md-6" id=input>
                     <input type="checkbox" name="terms" id="" required>
