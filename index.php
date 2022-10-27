@@ -16,7 +16,7 @@
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-OERcA2EqjJCMA+/3y+gxIOqMEjwtxJY7qPCqsdltbNJuaOe923+mo//f6V8Qbsw3" crossorigin="anonymous"></script>
 
     <!--===== Arquivo CSS local =====-->
-    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/styles.css">
 </head>
 <body>
     <div class="container">
@@ -25,11 +25,15 @@
              <h1 id="title">Cadastro.com</h1>
         </div>
         <div class="col" id=form>
-            <form action="users.php" method="post">
+            <form action="index.php" method="post">
                 <input type="hidden" name="acao" value="cadastrar">
                 <div class="col-md-6" id=input>
                     <label>Nome completo</label>
                     <input type="text" name="nome" class="form-control">
+                </div>
+                <div class="col-md-6" id=input>
+                    <label>Nome de usuário</label>
+                    <input type="text" name="nome_usuario" class="form-control">
                 </div>
                 <div class="col-md-6" id=input>
                     <label>E-mail</label>
@@ -44,16 +48,7 @@
                     <input type="date" name="data_nasc" class="form-control">
                 </div>
                 <div class="col-md-6" id=input>
-                    <label for="disabledSelect" class="form-label">Sexo</label>
-                    <select id="disabledSelect" class="form-select">
-                        <option disabled selected>Selecione</option>
-                        <option value="masculino">Masculino</option>
-                        <option value="feminino">Feminino</option>
-                        <option value="indefinido">Prefiro não dizer</option>
-                    </select>
-                </div>
-                <div class="col-md-6" id=input>
-                    <input type="checkbox" name="terms" id="" required>
+                    <input type="checkbox" name="" id="" required>
                     <label>Concordo com os <b><a href="terms-of-use.php">Termos de Uso</a></b> de Cadastro.com</label>
                 </div>
                 <div class="col-md-6" id=btn-primary>

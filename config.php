@@ -1,8 +1,8 @@
 <?php
-    define ('HOST', 'localhost');
-    define ('USER', 'root');
-    define ('PASSWORD', '');
-    define ('DATABASE', 'cadastro');
+   define ('HOST', 'localhost');
+   define ('USER', 'root');
+   define ('PASS', '');
+   define ('BASE', 'cadastro');
 
-    $connect = new MySQLi(HOST, USER, PASSWORD, DATABASE);
+   $conn = new MySQLi(HOST,USER,PASS,BASE);
 ?>

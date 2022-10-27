@@ -45,10 +45,27 @@ li{
     margin-top: 30px;
 }
 #adm-btn{
-  margin-left: 180px;
-  margin-top: -67px;
+    margin-left: 180px;
+    margin-top: -67px;
 }
 #adm-title{
     text-decoration: none;
     color: #ffffff;
+}
+#adm-btn2{
+    margin-left: 80px;
+    margin-top: -67px;
+}
+#adm-title2{
+    text-decoration: none;
+    color: #ffffff;
+}
+#back-btn{
+    margin-left: 10px;
+}
+#redirect-title{
+    background-color: #39C939;
+    margin-top: 25px;
+    margin-left: 10px;
+    padding: 20px;
 }
