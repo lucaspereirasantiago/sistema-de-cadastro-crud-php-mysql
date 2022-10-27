@@ -61,7 +61,7 @@
             </form>
         </div>
         <div class="col" id="adm">
-            <button class="btn btn-success" id="adm-btn"><a id="adm-title" href="">Administrar Usuários</a></button>
+            <button class="btn btn-success" id="adm-btn"><a id="adm-title" href="users.php">Administrar Usuários</a></button>
         </div>
     </div>
 </body>
