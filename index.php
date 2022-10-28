@@ -1,6 +1,6 @@
 <?php
     include("config/connect.php");
-    include("config/validation.php");
+   // include("config/validation.php");
 ?>
 <!DOCTYPE html>
 <html lang="pt-br">
@@ -29,7 +29,7 @@
              <h1 id="title">Cadastro.com</h1>
         </div>
         <div class="col" id=form>
-            <form action="" method="post">
+            <form action="config/actions.php" method="post">
                 <input type="hidden" name="acao" value="cadastrar">
                 <div class="col-md-6" id=input>
                     <label>Nome completo</label>
@@ -51,10 +51,7 @@
                     <label>Data de Nascimento</label>
                     <input type="date" name="data_nasc" class="form-control">
                 </div>
-                <div class="col-md-6" id=input>
-                    <input type="checkbox" name="" id="" required>
-                    <label>Concordo com os <b><a href="terms-of-use.php">Termos de Uso</a></b> de Cadastro.com</label>
-                </div>
+                
                 <div class="col-md-6" id=btn-primary>
                     <button type="submit" class="btn btn-primary">Cadastrar</button>
                 </div>
