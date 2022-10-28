@@ -1,3 +1,6 @@
+<?php
+    include("config.php");
+?>
 <!DOCTYPE html>
 <html lang="pt-br">
 <head>
@@ -25,7 +28,7 @@
              <h1 id="title">Cadastro.com</h1>
         </div>
         <div class="col" id=form>
-            <form action="index.php" method="post">
+            <form action="" method="post">
                 <input type="hidden" name="acao" value="cadastrar">
                 <div class="col-md-6" id=input>
                     <label>Nome completo</label>
