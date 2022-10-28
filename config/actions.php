@@ -1,5 +1,5 @@
 <?php
-    require_once("connect.php");
+    include("connect.php");
 
     switch ($_REQUEST["acao"]){
         case 'cadastrar':
