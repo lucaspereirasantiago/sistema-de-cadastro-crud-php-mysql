@@ -29,16 +29,16 @@
             <div class="col-md-12">
                 <ol>
                     <li><p>Lorem ipsum dolor sit amet consectetur adipisicing elit.<br>
-                    Beatae, aliquid quae placeat reprehenderit quam sit corporis, temporibus
-                    delectus dolorem nemo, praesentium architecto illum repellendus! Necessitatibus
+                    Beatae, aliquid quae placeat reprehenderit quam sit corporis,<br>temporibus
+                    delectus dolorem nemo, praesentium architecto illum<br>repellendus! Necessitatibus
                     eum reiciendis pariatur fuga odio?</p></li>
-                    <li><p>Lorem ipsum dolor sit amet consectetur adipisicing elit.
-                    Beatae, aliquid quae placeat reprehenderit quam sit corporis, temporibus
-                    delectus dolorem nemo, praesentium architecto illum repellendus! Necessitatibus
+                    <li><p>Lorem ipsum dolor sit amet consectetur adipisicing elit.<br>
+                    Beatae, aliquid quae placeat reprehenderit quam sit corporis,<br>temporibus
+                    delectus dolorem nemo, praesentium architecto illum<br>repellendus! Necessitatibus
                     eum reiciendis pariatur fuga odio?</p></li>
-                    <li><p>Lorem ipsum dolor sit amet consectetur adipisicing elit.
-                    Beatae, aliquid quae placeat reprehenderit quam sit corporis, temporibus
-                    delectus dolorem nemo, praesentium architecto illum repellendus! Necessitatibus
+                    <li><p>Lorem ipsum dolor sit amet consectetur adipisicing elit.<br>
+                    Beatae, aliquid quae placeat reprehenderit quam sit corporis,<br>temporibus
+                    delectus dolorem nemo, praesentium architecto illum<br>repellendus! Necessitatibus
                     eum reiciendis pariatur fuga odio?</p></li>
                 </ol>
             </div>
