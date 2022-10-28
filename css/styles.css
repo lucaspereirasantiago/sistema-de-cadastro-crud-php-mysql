@@ -37,13 +37,6 @@ label{
     margin-top: 25px;
     margin-left: 200px;
 }
-p{
-    text-align: justify;
-    max-width: 60%;
-}
-li{
-    margin-top: 30px;
-}
 #adm-btn{
     margin-left: 180px;
     margin-top: -67px;
@@ -68,4 +61,11 @@ li{
     margin-top: 25px;
     margin-left: 10px;
     padding: 20px;
+}
+p{
+    text-align: justify;
+    max-width: 60%;
+}
+li{
+    margin-top: 30px;
 }

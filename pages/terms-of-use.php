@@ -16,7 +16,7 @@
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-OERcA2EqjJCMA+/3y+gxIOqMEjwtxJY7qPCqsdltbNJuaOe923+mo//f6V8Qbsw3" crossorigin="anonymous"></script>
 
     <!--===== Arquivo CSS local =====-->
-    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/styles.css">
 </head>
 <body>
     <div class="container">
@@ -28,7 +28,7 @@
        <div class="row">
             <div class="col-md-12">
                 <ol>
-                    <li><p>Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                    <li><p>Lorem ipsum dolor sit amet consectetur adipisicing elit.<br>
                     Beatae, aliquid quae placeat reprehenderit quam sit corporis, temporibus
                     delectus dolorem nemo, praesentium architecto illum repellendus! Necessitatibus
                     eum reiciendis pariatur fuga odio?</p></li>
