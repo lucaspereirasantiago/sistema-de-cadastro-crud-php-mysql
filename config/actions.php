@@ -1,6 +1,8 @@
 <?php
     include("connect.php");
 
+    $refresh = header("Refresh: 1.0; url=http://localhost/crud-php/index.php");
+
     switch ($_REQUEST["acao"]){
         case 'cadastrar':
             $nome = $_POST["nome"];
@@ -15,7 +17,7 @@
             $res = $connect->query($sql);
 
             if($res == TRUE){
-                echo "<h1>Feito!</h1>";
+                echo $refresh;
             }
         break;
     }
