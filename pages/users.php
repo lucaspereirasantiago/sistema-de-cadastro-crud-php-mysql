@@ -29,7 +29,7 @@
 
         <div class="row">
             <div class="col-md-12">
-                <a href="index.php">Voltar</a>
+                <a href="/crud-php/index.php">Voltar</a>
             </div>
         </div>
     </div>
