@@ -1,7 +1,7 @@
 <?php
     include("connect.php");
 
-    $refresh = header("Refresh: 1.0; url=http://localhost/crud-php/index.php");
+    $refresh = header("Refresh: 0; url=http://localhost/crud-php/index.php");
 
     switch ($_REQUEST["acao"]){
         case 'cadastrar':
@@ -17,7 +17,7 @@
             $res = $connect->query($sql);
 
             if($res == TRUE){
-                echo $refresh;
+                echo "<script>alert('Cadastro concluído!');</script>";
             }
         break;
     }
