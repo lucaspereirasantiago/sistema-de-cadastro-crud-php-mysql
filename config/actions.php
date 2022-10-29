@@ -17,7 +17,7 @@
             $res = $connect->query($sql);
 
             if($res == TRUE){
-                echo "<script>alert('Cadastro concluído!');</script>";
+                echo "<script>alert('Cadastro concluído!');</script>" . $refresh;
             }
         break;
     }
