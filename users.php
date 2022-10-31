@@ -32,20 +32,32 @@
         <div class="row">
             <div class="col-md-12">
                 <?php
-                    $sql = "SELECT * FROM usuarios";
-
-                    $res = $connect->query($sql);
-                
-                    $qtd = $res->num_rows;
-                
                     if($qtd > 0){
+                        echo "<table class='table table-hover table-bordered'>";
+
+                        echo "<thead>";
+                            print "<tr class='table-dark'>";
+                                print"<th scope='col'>id &#x1f511;</th>";
+                                print"<th scope='col'>Nome completo</th>";
+                                print"<th scope='col'>Nome de usuário</th>";
+                                print"<th scope='col'>E-mail</th>";
+                                print"<th scope='col'>Data de nascimento</th>";
+                            print "</tr>";
+                        echo "</thead>";
                         while ($row = $res->fetch_object()){
-                            print $row->id;
-                            print $row->nome;
-                            print $row->nome_usuario;
-                            print $row->email;
-                            print $row->data_nasc;
+                        echo "<tr class='table-light'>";
+
+                            print "<td>" . $row->id . "</td>";
+                            print "<td>" . $row->nome . "</td>";
+                            print "<td>" . $row->nome_usuario . "</td>";
+                            print "<td>" . $row->email . "</td>";
+                            print "<td>" . $row->data_nasc . "</td>";
+
+                        echo "</tr>";
                         }
+
+                        echo "</table>";
+
                     }else{
                         echo "<script>alert('Sem resultados!');</script>";
                     }

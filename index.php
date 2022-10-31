@@ -48,7 +48,7 @@
                     <input type="password" name="senha" class="form-control">
                 </div>
                 <div class="col-md-6" id=input>
-                    <label>Data de Nascimento</label>
+                    <label>Data de nascimento</label>
                     <input type="date" name="data_nasc" class="form-control">
                 </div>
                 <div class="col-md-6" id=input>
