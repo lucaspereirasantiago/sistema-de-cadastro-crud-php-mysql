@@ -1,14 +1,5 @@
 <?php
     include("config/connect.php");
-
-    switch (@$_REQUEST["page"]){
-        case 'terms':
-            header("Refresh: 0; url=http://localhost/crud-php/terms-of-use.php");
-        break;
-        case 'admin':
-            header("Refresh: 0; url=http://localhost/crud-php/users.php");
-        break;
-    }
 ?>
 <!DOCTYPE html>
 <html lang="pt-br">
@@ -59,17 +50,10 @@
                     <label>Data de nascimento</label>
                     <input type="date" name="data_nasc" class="form-control">
                 </div>
-                <div class="col-md-6" id=input>
-                    <input type="checkbox" name="" id="" required>
-                    <label>Concordo com os <b><a href="?page=terms">Termos de Uso</a></b> de Cadastro.com</label>
-                </div>
                 <div class="col-md-6" id=btn-primary>
-                    <button type="submit" class="btn btn-primary">Cadastrar</button>
+                    <button type="submit" class="btn btn-warning">Editar</button>
                 </div>
             </form>
-        </div>
-        <div class="col" id="adm">
-            <button class="btn btn-success" id="adm-btn"><a id="adm-title" href="?page=admin">Administrar Usuários</a></button>
         </div>
     </div>
 </body>

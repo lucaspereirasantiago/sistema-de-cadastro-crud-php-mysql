@@ -1,3 +1,10 @@
+<?php
+    switch(@$_REQUEST["page"]){
+        case 'index':
+            header("Refresh: 0; url=http://localhost/crud-php/index.php");
+        break;
+    }
+?>
 <!DOCTYPE html>
 <html lang="pt-br">
 <head>
@@ -45,7 +52,7 @@
        </div>
        <div class="row">
             <div class="col-md-12">
-                <a href="/crud-php/index.php">Voltar</a>
+                <a href="?page=index">Voltar</a>
             </div>
        </div>
     </div>

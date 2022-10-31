@@ -1,6 +1,11 @@
 <?php
     include("config/connect.php");
-    include("config/filter.php");
+
+   switch (@$_REQUEST["page"]){
+    case 'index':
+        header("Refresh: 0; url=http://localhost/crud-php/index.php");
+    break;
+   }
 ?>
 <!DOCTYPE html>
 <html lang="pt-br">
@@ -32,6 +37,12 @@
         <div class="row">
             <div class="col-md-12">
                 <?php
+                    $sql = "SELECT * FROM usuarios";
+
+                    $res = $connect->query($sql);
+                
+                    $qtd = $res->num_rows;
+
                     if($qtd > 0){
                         echo "<table class='table table-hover table-bordered'>";
 
@@ -42,6 +53,7 @@
                                 print"<th scope='col'>Nome de usuário</th>";
                                 print"<th scope='col'>E-mail</th>";
                                 print"<th scope='col'>Data de nascimento</th>";
+                                print"<th scope='col'>Ações</th>";
                             print "</tr>";
                         echo "</thead>";
                         while ($row = $res->fetch_object()){
@@ -52,6 +64,11 @@
                             print "<td>" . $row->nome_usuario . "</td>";
                             print "<td>" . $row->email . "</td>";
                             print "<td>" . $row->data_nasc . "</td>";
+                            print
+                            "<td>
+                                <button onclick=\"location.href='?page=edit&id=".$row->id."';\">Editar</button>
+                                <button>Excluir</button>
+                            </td>";
 
                         echo "</tr>";
                         }
@@ -66,7 +83,7 @@
         </div>
         <div class="row">
             <div class="col-md-12">
-                <a href="/crud-php/index.php">Voltar</a>
+                <a href="?page=index">Voltar</a>
             </div>
         </div>
     </div>
