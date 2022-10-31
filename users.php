@@ -1,3 +1,7 @@
+<?php
+    include("config/connect.php");
+    include("config/filter.php");
+?>
 <!DOCTYPE html>
 <html lang="pt-br">
 <head>
@@ -25,8 +29,29 @@
 </head>
 <body>
     <div class="container">
-        <h1>TESTE</h1>
+        <div class="row">
+            <div class="col-md-12">
+                <?php
+                    $sql = "SELECT * FROM usuarios";
 
+                    $res = $connect->query($sql);
+                
+                    $qtd = $res->num_rows;
+                
+                    if($qtd > 0){
+                        while ($row = $res->fetch_object()){
+                            print $row->id;
+                            print $row->nome;
+                            print $row->nome_usuario;
+                            print $row->email;
+                            print $row->data_nasc;
+                        }
+                    }else{
+                        echo "<script>alert('Sem resultados!');</script>";
+                    }
+                ?>
+            </div>
+        </div>
         <div class="row">
             <div class="col-md-12">
                 <a href="/crud-php/index.php">Voltar</a>

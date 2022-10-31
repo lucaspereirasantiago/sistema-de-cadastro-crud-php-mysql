@@ -53,7 +53,7 @@
                 </div>
                 <div class="col-md-6" id=input>
                     <input type="checkbox" name="" id="" required>
-                    <label>Concordo com os <b><a href="pages/terms-of-use.php">Termos de Uso</a></b> de Cadastro.com</label>
+                    <label>Concordo com os <b><a href="terms-of-use.php">Termos de Uso</a></b> de Cadastro.com</label>
                 </div>
                 <div class="col-md-6" id=btn-primary>
                     <button type="submit" class="btn btn-primary">Cadastrar</button>
@@ -61,7 +61,7 @@
             </form>
         </div>
         <div class="col" id="adm">
-            <button class="btn btn-success" id="adm-btn"><a id="adm-title" href="pages/users.php">Administrar Usuários</a></button>
+            <button class="btn btn-success" id="adm-btn"><a id="adm-title" href="users.php">Administrar Usuários</a></button>
         </div>
     </div>
 </body>
