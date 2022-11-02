@@ -63,7 +63,7 @@
                 </div>
                 <div class="col-md-6" id=input>
                     <label>Senha</label>
-                    <input type="password" name="senha" placeholder="Digite uma nova senha!" class="form-control">
+                    <input type="password" name="senha" placeholder="Digite sua nova senha!" class="form-control">
                 </div>
                 <div class="col-md-6" id=input>
                     <label>Data de nascimento</label>
