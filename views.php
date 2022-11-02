@@ -23,12 +23,12 @@
 </head>
 <body>     
     <nav>
-        <a href= <?php "{$_GET['file']}.php" ?> ></a>
+        <a href= <?php "{$_GET["file"]}.php" ?> ></a>
     </nav>  
 
     <div>
         <?php
-            include_once("{$_GET['file']}.php");
+            include_once("{$_GET["file"]}.php");
         ?>
     </div>
 </body>
