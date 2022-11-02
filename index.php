@@ -63,7 +63,7 @@
                 </div>
                 <div class="col-md-6" id=input>
                     <input type="checkbox" name="" id="" required>
-                    <label>Concordo com os <b><a href="?page=terms">Termos de Uso</a></b> de Cadastro.com</label>
+                    <label>Concordo com os <b><a href="views.php?file=terms-of-use">Termos de Uso</a></b> de Cadastro.com</label>
                 </div>
                 <div class="col-md-6" id=btn-primary>
                     <button type="submit" class="btn btn-primary">Cadastrar</button>

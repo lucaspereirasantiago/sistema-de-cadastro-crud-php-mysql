@@ -2,7 +2,7 @@
     include_once("config/connect.php");
     include_once("config/filter.php");
     
-    $sql = "SELECT * FROM usuarios WHERE id=".$row->id;
+    $sql = "SELECT * FROM usuarios WHERE id=".$_REQUEST["id"];
 
     $res = $connect->query($sql);
 

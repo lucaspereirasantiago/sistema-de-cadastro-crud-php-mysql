@@ -1,5 +1,5 @@
 <?php
-    include("connect.php");
+    include_once("connect.php");
 
     $refresh = header("Refresh: 0; url=http://localhost/crud-php/views.php?file=users");
 

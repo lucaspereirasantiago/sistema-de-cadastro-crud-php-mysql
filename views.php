@@ -28,7 +28,7 @@
 
     <div>
         <?php
-            include("{$_GET['file']}.php");
+            include_once("{$_GET['file']}.php");
         ?>
     </div>
 </body>

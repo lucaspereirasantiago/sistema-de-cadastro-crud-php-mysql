@@ -47,9 +47,7 @@
             <div class="col-md-12">
                 <?php
                     $sql = "SELECT * FROM usuarios";
-
                     $res = $connect->query($sql);
-                
                     $qtd = $res->num_rows;
 
                     if($qtd > 0){
