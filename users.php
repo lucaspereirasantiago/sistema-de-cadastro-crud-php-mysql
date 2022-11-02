@@ -1,4 +1,6 @@
-<?php include_once("config/connect.php"); ?>
+<?php
+    include_once("config/connect.php");
+?>
 <!DOCTYPE html>
 <html lang="pt-br">
 <head>
@@ -73,7 +75,7 @@
                             print "<td>" . $row->data_nasc . "</td>";
                             print
                             "<td>
-                                <button onclick=\"location.href='?page=edit';\">Editar</button>
+                                <button onclick=\"location.href='views.php?file=edit-form&id=".$row->id."';\">Editar</button>
 
                                 <button onclick=\"if(confirm('Tem certeza?')){location.href='?page=admin&acao=excluir&id=".$row->id."';}else{false}\">Excluir</button>
                             </td>";

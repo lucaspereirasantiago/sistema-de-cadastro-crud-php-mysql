@@ -1,17 +1,12 @@
 <?php
-    include("config/connect.php");
+    include_once("config/connect.php");
+    include_once("config/filter.php");
     
     $sql = "SELECT * FROM usuarios WHERE id=".$row->id;
 
     $res = $connect->query($sql);
 
-    $array = $res->fetch_object();
-
-    switch (@$_REQUEST["page"]){
-        case 'admin':
-            header("Refresh: 0; url=http://localhost/crud-php/users.php");
-        break;
-    }
+    $row = $res->fetch_object();
 ?>
 <!DOCTYPE html>
 <html lang="pt-br">
@@ -34,25 +29,36 @@
     <link rel="stylesheet" href="css/styles.css">
 </head>
 <body>
-    <div class="container">
-        <div class="col" id="block-logo">
-             <img id="logo" src="img/databaseicon.png" alt="">
-             <h1 id="title">Cadastro.com</h1>
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+        <div class="container-fluid" id="navigation">
+            <a class="navbar-brand" href="index.php">
+                <img src="img/db_icon.png" alt="Logo" width="30" height="30" class="d-inline-block align-text-top">
+                Cadastro.com
+            </a>
+            <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
+                <div class="navbar-nav">
+                    <a class="nav-link active" aria-current="page" href="views.php?file=index">Tela de Cadastro</a>
+                    <a class="nav-link" href="views.php?file=users">Administrar Usuários</a>
+                </div>
+            </div>
         </div>
+    </nav>
+
+    <div class="container">
         <div class="col" id=form>
             <form action="config/actions.php" method="post">
                 <input type="hidden" name="acao" value="cadastrar">
                 <div class="col-md-6" id=input>
                     <label>Nome completo</label>
-                    <input type="text" name="nome" class="form-control">
+                    <input type="text" name="nome" value="<?php print $row->nome;?>" class="form-control">
                 </div>
                 <div class="col-md-6" id=input>
                     <label>Nome de usuário</label>
-                    <input type="text" name="nome_usuario" value="<?php print $array->nome;?>" class="form-control">
+                    <input type="text" name="nome_usuario" value="<?php print $row->nome_usuario;?>" class="form-control">
                 </div>
                 <div class="col-md-6" id=input>
                     <label>E-mail</label>
-                    <input type="text" name="email" class="form-control">
+                    <input type="text" name="email" value="<?php print $row->email;?>" class="form-control">
                 </div>
                 <div class="col-md-6" id=input>
                     <label>Senha</label>
@@ -60,7 +66,7 @@
                 </div>
                 <div class="col-md-6" id=input>
                     <label>Data de nascimento</label>
-                    <input type="date" name="data_nasc" class="form-control">
+                    <input type="date" name="data_nasc" value="<?php print $row->data_nasc;?>" class="form-control">
                 </div>
                 <div class="col-md-6" id=btn-primary>
                     <button type="submit" class="btn btn-warning">Editar</button>

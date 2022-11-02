@@ -1,7 +1,7 @@
 <?php
     include("connect.php");
 
-    $refresh = header("Refresh: 0; url=http://localhost/crud-php/index.php");
+    $refresh = header("Refresh: 0; url=http://localhost/crud-php/views.php?file=users");
 
     switch ($_REQUEST["acao"]){
         case 'cadastrar':
