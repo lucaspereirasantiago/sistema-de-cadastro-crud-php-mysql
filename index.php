@@ -1,15 +1,4 @@
-<?php
-    include("config/connect.php");
-
-    switch (@$_REQUEST["page"]){
-        case 'terms':
-            header("Refresh: 0; url=http://localhost/crud-php/terms-of-use.php");
-        break;
-        case 'admin':
-            header("Refresh: 0; url=http://localhost/crud-php/users.php");
-        break;
-    }
-?>
+<?php include_once("config/connect.php"); ?>
 <!DOCTYPE html>
 <html lang="pt-br">
 <head>
@@ -30,12 +19,23 @@
     <!--===== Arquivo CSS local =====-->
     <link rel="stylesheet" href="css/styles.css">
 </head>
-<body>
-    <div class="container">
-        <div class="col" id="block-logo">
-             <img id="logo" src="img/databaseicon.png" alt="">
-             <h1 id="title">Cadastro.com</h1>
+<body>     
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+        <div class="container-fluid" id="navigation">
+            <a class="navbar-brand" href="index.php">
+                <img src="img/db_icon.png" alt="Logo" width="30" height="30" class="d-inline-block align-text-top">
+                Cadastro.com
+            </a>
+            <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
+                <div class="navbar-nav">
+                    <a class="nav-link active" aria-current="page" href="views.php?file=index">Tela de Cadastro</a>
+                    <a class="nav-link" href="views.php?file=users">Administrar Usuários</a>
+                </div>
+            </div>
         </div>
+    </nav>  
+
+    <div class="container">
         <div class="col" id=form>
             <form action="config/actions.php" method="post">
                 <input type="hidden" name="acao" value="cadastrar">
@@ -67,9 +67,6 @@
                     <button type="submit" class="btn btn-primary">Cadastrar</button>
                 </div>
             </form>
-        </div>
-        <div class="col" id="adm">
-            <button class="btn btn-success" id="adm-btn"><a id="adm-title" href="?page=admin">Administrar Usuários</a></button>
         </div>
     </div>
 </body>

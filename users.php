@@ -1,12 +1,4 @@
-<?php
-    include("config/connect.php");
-
-   switch (@$_REQUEST["page"]){
-    case 'index':
-        header("Refresh: 0; url=http://localhost/crud-php/index.php");
-    break;
-   }
-?>
+<?php include_once("config/connect.php"); ?>
 <!DOCTYPE html>
 <html lang="pt-br">
 <head>
@@ -33,7 +25,22 @@
     <link rel="stylesheet" href="css/styles.css">
 </head>
 <body>
-    <div class="container">
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+        <div class="container-fluid" id="navigation">
+            <a class="navbar-brand" href="index.php">
+                <img src="img/db_icon.png" alt="Logo" width="30" height="30" class="d-inline-block align-text-top">
+                Cadastro.com
+            </a>
+            <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
+                <div class="navbar-nav">
+                    <a class="nav-link" href="views.php?file=index">Tela de Cadastro</a>
+                    <a class="nav-link active" aria-current="page" href="views.php?file=users">Administrar Usuários</a>
+                </div>
+            </div>
+        </div>
+    </nav>  
+
+    <div class="container" id="table-users">
         <div class="row">
             <div class="col-md-12">
                 <?php
@@ -66,8 +73,9 @@
                             print "<td>" . $row->data_nasc . "</td>";
                             print
                             "<td>
-                                <button onclick=\"location.href='?page=edit&id=".$row->id."';\">Editar</button>
-                                <button>Excluir</button>
+                                <button onclick=\"location.href='?page=edit';\">Editar</button>
+
+                                <button onclick=\"if(confirm('Tem certeza?')){location.href='?page=admin&acao=excluir&id=".$row->id."';}else{false}\">Excluir</button>
                             </td>";
 
                         echo "</tr>";
@@ -79,11 +87,6 @@
                         echo "<script>alert('Sem resultados!');</script>";
                     }
                 ?>
-            </div>
-        </div>
-        <div class="row">
-            <div class="col-md-12">
-                <a href="?page=index">Voltar</a>
             </div>
         </div>
     </div>

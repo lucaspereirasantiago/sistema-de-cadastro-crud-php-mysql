@@ -1,5 +1,17 @@
 <?php
     include("config/connect.php");
+    
+    $sql = "SELECT * FROM usuarios WHERE id=".$row->id;
+
+    $res = $connect->query($sql);
+
+    $array = $res->fetch_object();
+
+    switch (@$_REQUEST["page"]){
+        case 'admin':
+            header("Refresh: 0; url=http://localhost/crud-php/users.php");
+        break;
+    }
 ?>
 <!DOCTYPE html>
 <html lang="pt-br">
@@ -36,7 +48,7 @@
                 </div>
                 <div class="col-md-6" id=input>
                     <label>Nome de usuário</label>
-                    <input type="text" name="nome_usuario" class="form-control">
+                    <input type="text" name="nome_usuario" value="<?php print $array->nome;?>" class="form-control">
                 </div>
                 <div class="col-md-6" id=input>
                     <label>E-mail</label>
@@ -44,7 +56,7 @@
                 </div>
                 <div class="col-md-6" id=input>
                     <label>Senha</label>
-                    <input type="password" name="senha" class="form-control">
+                    <input type="password" name="senha" placeholder="Digite uma nova senha!" class="form-control">
                 </div>
                 <div class="col-md-6" id=input>
                     <label>Data de nascimento</label>
