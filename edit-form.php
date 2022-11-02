@@ -47,7 +47,8 @@
     <div class="container">
         <div class="col" id=form>
             <form action="config/actions.php" method="post">
-                <input type="hidden" name="acao" value="cadastrar">
+                <input type="hidden" name="acao" value="editar">
+                <input type="hidden" name="id" value="<?php print $row->id ?>">
                 <div class="col-md-6" id=input>
                     <label>Nome completo</label>
                     <input type="text" name="nome" value="<?php print $row->nome;?>" class="form-control">

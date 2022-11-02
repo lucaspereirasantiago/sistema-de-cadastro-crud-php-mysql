@@ -75,7 +75,7 @@
                             "<td>
                                 <button onclick=\"location.href='views.php?file=edit-form&id=".$row->id."';\">Editar</button>
 
-                                <button onclick=\"if(confirm('Tem certeza?')){location.href='?page=admin&acao=excluir&id=".$row->id."';}else{false}\">Excluir</button>
+                                <button onclick=\"if(confirm('Tem certeza?')){location.href='views.php?file=users&acao=excluir&id=".$row->id."';}else{false}\">Excluir</button>
                             </td>";
 
                         echo "</tr>";
