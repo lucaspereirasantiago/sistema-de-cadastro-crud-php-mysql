@@ -1,3 +1,7 @@
+<?php
+    include_once("config/connect.php");
+    include_once("config/filter.php");
+?>
 <!DOCTYPE html>
 <html lang="pt-br">
 <head>
@@ -21,10 +25,23 @@
 <body>
     <div class="container">
         <div class="row">
-            <h2>Tem Certeza?</h2>
-            <span><p>Essa ação não poderá ser desfeita!</p></span>
+            <div class="col-12">
+                <h1 id="popupH1">Tem Certeza?</h1>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-12">
+                <p id="popupP">Essa ação não poderá ser desfeita!</p>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-12">
+                <form action="config/actions.php" method="post">
+                    <input type="hidden" name="acao" value="excluir">
+                    <button type="submit" class="btn btn-danger" id="popup-btn">Excluir</button>
+                </form>
+            </div>
         </div>
     </div>
-    <script src="js/scripts.js"></script>
 </body>
 </html>

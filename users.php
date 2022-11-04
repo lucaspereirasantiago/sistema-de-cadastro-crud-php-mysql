@@ -70,7 +70,7 @@
                             "<td>
                                 <button onclick=\"location.href='views.php?file=edit-form&id=".$row->id."';\">Editar</button>
 
-                                <button onclick=\"if(confirm('Tem certeza?')){location.href='views.php?file=users&acao=excluir&id=".$row->id."';}else{false}\">Excluir</button>
+                                <button onclick=\"delPopup()\">Excluir</button></a>
                             </td>";
 
                         echo "</tr>";
@@ -85,5 +85,6 @@
             </div>
         </div>
     </div>
+    <script src="js/scripts.js"></script>
 </body>
 </html>

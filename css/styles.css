@@ -37,3 +37,15 @@ label{
 #table-users{
     margin-top: 30px !important;
 }
+#popupH1{
+    margin-left: 125px;
+    margin-top: 15%;
+}
+#popupP{
+    margin-left: 90px;
+    margin-top: 2%;
+}
+#popup-btn{
+    margin-left: 170px;
+    margin-top: 5%;
+}
