@@ -38,10 +38,11 @@
             <div class="col-12">
                 <form action="config/actions.php" method="post">
                     <input type="hidden" name="acao" value="excluir">
-                    <button type="submit" class="btn btn-danger" id="popup-btn">Excluir</button>
+                    <button type="submit" class="btn btn-danger" id="popup-btn" onclick="popupClose()">Excluir</button>
                 </form>
             </div>
         </div>
     </div>
+    <script src="js/scripts.js"></script>
 </body>
 </html>
