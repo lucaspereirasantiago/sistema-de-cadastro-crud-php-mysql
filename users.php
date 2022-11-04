@@ -68,9 +68,9 @@
                             print "<td>" . $row->data_nasc . "</td>";
                             print
                             "<td>
-                                <button onclick=\"location.href='views.php?file=edit-form&id=".$row->id."';\">Editar</button>
+                                <button class='btn btn-warning' onclick=\"location.href='views.php?file=edit-form&id=".$row->id."';\">Editar</button>
 
-                                <button onclick=\"location.href='views.php?file=delete-user&id=".$row->id."';\">Excluir</button>
+                                <button class='btn btn-danger' onclick=\"location.href='views.php?file=delete-user&id=".$row->id."';\">Excluir</button>
                             </td>";
 
                         echo "</tr>";
