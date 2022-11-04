@@ -40,4 +40,17 @@
             }
         break;
     }
+    switch ($_REQUEST["acao"]){
+        case 'excluir':
+
+            $sql = "DELETE FROM usuarios WHERE id=".$_REQUEST["id"];
+            
+            
+            $res = $connect->query($sql);
+
+            if($res == TRUE){
+                echo "<script>alert('Usuário excluído!');</script>" . $refresh;
+            }
+        break;
+    }
 ?>

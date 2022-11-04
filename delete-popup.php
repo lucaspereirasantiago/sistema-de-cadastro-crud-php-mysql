@@ -1,14 +1,10 @@
-<?php
-    include_once("config/connect.php");
-    include_once("{$_GET["file"]}.php");
-?>
 <!DOCTYPE html>
 <html lang="pt-br">
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title><?php  include_once("$_GET[$title]"); ?></title>
+    <title><?php $title = print "Excluir usuário - Cadastro.com" ?></title>
 
     <!--===== Bootstrap CSS CDN =====-->
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-Zenh87qX5JnK2Jl0vWa8Ck2rdkQ2Bzep5IDxbcnCeuOxjzrPF/et3URy9Bv1WTRi" crossorigin="anonymous">
@@ -22,15 +18,13 @@
     <!--===== Arquivo CSS local =====-->
     <link rel="stylesheet" href="css/styles.css">
 </head>
-<body>     
-    <nav>
-        <a href= <?php "{$_GET["file"]}.php" ?> ></a>
-    </nav>  
-
-    <div>
-        <?php
-            include_once("{$_GET["file"]}.php");
-        ?>
+<body>
+    <div class="container">
+        <div class="row">
+            <h2>Tem Certeza?</h2>
+            <span><p>Essa ação não poderá ser desfeita!</p></span>
+        </div>
     </div>
+    <script src="js/scripts.js"></script>
 </body>
 </html>
