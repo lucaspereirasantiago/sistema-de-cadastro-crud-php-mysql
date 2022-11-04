@@ -1,6 +1,12 @@
 <?php
     include_once("config/connect.php");
     include_once("config/filter.php");
+
+    $sql = "SELECT * FROM usuarios WHERE id=".$_REQUEST["id"];
+
+    $res = $connect->query($sql);
+
+    $row = $res->fetch_object();
 ?>
 <!DOCTYPE html>
 <html lang="pt-br">
@@ -20,29 +26,34 @@
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-OERcA2EqjJCMA+/3y+gxIOqMEjwtxJY7qPCqsdltbNJuaOe923+mo//f6V8Qbsw3" crossorigin="anonymous"></script>
 
     <!--===== Arquivo CSS local =====-->
-    <link rel="stylesheet" href="css/styles.css">
+    <link rel="stylesheet" href="css/my_styles.css">
 </head>
 <body>
     <div class="container">
         <div class="row">
             <div class="col-12">
-                <h1 id="popupH1">Tem Certeza?</h1>
+                <h1 id="delH1">Tem Certeza?</h1>
             </div>
         </div>
         <div class="row">
             <div class="col-12">
-                <p id="popupP">Essa ação não poderá ser desfeita!</p>
+                <p id="delP">Essa ação não poderá ser desfeita!</p>
             </div>
         </div>
         <div class="row">
             <div class="col-12">
                 <form action="config/actions.php" method="post">
                     <input type="hidden" name="acao" value="excluir">
-                    <button type="submit" class="btn btn-danger" id="popup-btn" onclick="popupClose()">Excluir</button>
+                    <input type="hidden" name="id" value="<?php print $row->id ?>">
+                    <button type="submit" class="btn btn-danger" id="del-btn">Excluir</button>
                 </form>
             </div>
         </div>
+        <div class="row">
+            <div class="col-12">
+                <p id="delA"><a href="views.php?file=users">Voltar</a></p>
+            </div>
+        </div>
     </div>
-    <script src="js/scripts.js"></script>
 </body>
 </html>

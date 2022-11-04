@@ -37,15 +37,37 @@ label{
 #table-users{
     margin-top: 30px !important;
 }
-#popupH1{
-    margin-left: 125px;
+#delH1{
+    margin-left: 375px;
     margin-top: 15%;
+    font-weight: 700;
+    font-size: 50px;
 }
-#popupP{
-    margin-left: 90px;
+#delP{
+    margin-left: 397px;
     margin-top: 2%;
+    font-size: 17px;
 }
-#popup-btn{
-    margin-left: 170px;
-    margin-top: 5%;
+#del-btn{
+    margin-left: 450px;
+    margin-top: 3%;
+    width: 150px;
+    padding: 10px;
+}
+#delA > a{
+    text-decoration: none;
+    color: #212121;
+    background-color: #dad2d2;
+    padding: 3px;
+}
+#delA{
+    margin-left: 500px;
+    margin-top: 10%;
+}
+#termsA > a{
+    text-decoration: none;
+    color: #F0EFE7;
+    background-color: #212121;
+    margin-left: 200px;
+    padding: 3px;
 }
